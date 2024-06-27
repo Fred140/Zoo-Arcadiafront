@@ -1,0 +1,97 @@
+
+<div class="hero-scene text-center text-white">
+  <div class="hero-scene-content">
+    <h1>Les services</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col" id="allImage">
+    </div>
+    <div class="col" id="allImage2">
+    </div>
+    <div class="col" id="allImage3">
+    </div>
+  </div>
+</div>
+
+
+<!--Modal Edition-->
+<div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition photo</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="NamePhotoInput" class="form-label">Titre</label>
+            <input type="text" class="form-control" id="NamePhotoInput" placeholder="Autre photo">
+          </div>
+          <div class="mb-3">
+            <label for="ImageInput" class="form-label">Image</label>
+            <input type="file" class="form-control" id="ImageInput">
+          </div>
+          <div class="text-center">
+            <button type="button" class="btn btn-primary">Enregistrer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Modal Edition text-->
+<div class="modal fade" id="EditionTextModal" tabindex="-1" aria-labelledby="EditionTextModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="EditionTextModalLabel">Edition text</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form>
+        <div class="mb-3">
+          <label for="TextInput" class="form-label"></label>
+        </div>
+        <div class="modal-body">
+          <textarea class="form-control" style="min-width: 100%" id="TextInput"></textarea>
+        </div>
+        <div class="text-center pb-3">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--Modal Suppression-->
+<div class="modal fade" id="DeletePhotoModal" tabindex="-1" aria-labelledby="DeletePhotoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="DeletePhotoModalLabel">Êtes-vous sûr de vouloir supprimer cette photo</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <p>Titre</p>
+            <img class="rounded w-100" src="../Assets/restaurant.jpg">
+          </div>
+          <div class="mb-3">
+            <label for="ImageInput" class="form-label">Image</label>
+            <input type="file" class="form-control" id="ImageInput">
+          </div>
+          <div class="text-center">
+            <button type="button" class="btn btn-danger">Supprimer</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,72 @@
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Mon compte Administrateur</h1><br/>
+    </div>
+</div>
+
+<div class="container pt-3">
+    <form>
+       <div class="mb-3">
+          <h4 class="pt-3 pb-3">Création de compte professionnel:</h4>
+           <label for="NomInput" class="form-label">Nom</label>
+           <input type="email" class="form-control" id="NomInput" placeholder="Nom"> 
+           <div class="invalid-feedback">
+            Le Nom requis
+          </div> 
+         </div>
+       <div class="mb-3">
+           <label for="PrenomInput" class="form-label">Prénom</label>
+           <input type="email" class="form-control" id="PrenomInput" placeholder="Prénom">
+           <div class="invalid-feedback">
+            Le Prénom requis
+          </div> 
+         </div>
+       <div class="mb-3">
+         <label for="EmailInput" class="form-label">Email</label>
+         <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr"> 
+         <div class="invalid-feedback">
+          Le mail n'est pas valide 
+        </div>
+       </div>
+       <div class="mb-3">
+         <label for="PasswordInput" class="form-label">Mot de passe</label>
+         <input type="password" class="form-control" id="PasswordInput">
+         <div class="invalid-feedback">
+          Le mot de passe n'est pas assez robuste, au moins 8 caractères, comprenant 1 lettre Majuscule, 1 lettre Minuscule, 1 chiffre et 1 caractère spéciale
+        </div>
+       </div>
+       <div class="mb-3">
+           <label for="ValidatePasswordInput" class="form-label">Confirmer votre mot de passe</label>
+           <input type="password" class="form-control" id="ValidatePasswordInput">
+           <div class="invalid-feedback">
+            Mot de passe doit être identique 
+        </div>
+         </div>
+         <div class="mb-3 pt-3 pb-3">
+         <label for="profession-select">D'abord, choisir la profession:</label><br/>
+         <select name="profession" id="profession-select">
+         <option value="">--Please choose an option--</option>
+         <option value="Vétérinaire">Vétérinaire</option>
+         <option value="Employé">Employé</option>
+         </select>
+         </div>
+        </div>
+        <div class="text-center pt-5 pb-5">
+          <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscription</button>
+         </div>
+     </form>
+     <div class="text-center mb-3">
+      <a href="/gestioncompte"  type="button" class="btn btn-secondary">Gérer les comptes pro</a>
+    </div>
+      <div class="text-center pt-5">
+        <h4>Modification des pages:</h4>
+        <a  href="/services" type="button" class="pd-3">Services à modifier</a><br/>
+        <a  href="/contact" type="button">Horaires à modifier</a><br/>
+        <a  href="/habitats" type="button">Habitats et animaux à modifier</a><br/>
+      </div>
+      <div class="text-center pt-5 pb-3">
+      <div class="mb-3">
+        <a  href="/dashboard" type="submit" class="btn btn-secondary" >Accéder au Dashboard du Zoo</a>
+      </div>
+    </div>
+</div>
